@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎹 music_library
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -184,3 +185,6 @@ music_library/
 - **継承 (SA)**: 改変した場合は、元の作品と同じ CC BY-NC-SA 4.0 ライセンスで公開してください。
 
 ライセンスの全文: <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.ja>
+=======
+Pythonで作られた微分音も出せるシンセサイザーです。
+>>>>>>> 9482cc7432b3b1d88fa0143b97013c3365ad6faa
