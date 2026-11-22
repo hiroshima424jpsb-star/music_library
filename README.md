@@ -43,7 +43,7 @@ cd music_library
 ```python
 import music
 
-music.music(0)   ## キラキラ星を再生
+music.music(0)   # キラキラ星を再生
 ```
 
 #### 付属の曲
@@ -63,14 +63,14 @@ music.music(0)   ## キラキラ星を再生
 ```python
 import music
 
-music.get_music_titles()           ## 曲名の一覧
-music.get_music_dict()             ## {曲名: index}
+music.get_music_titles()           # 曲名の一覧
+music.get_music_dict()             # {曲名: index}
 
-music.music(8)                     ## 推奨の音律(41-EDO)で自動的に再生
-music.music(5, solo=1)             ## カノンの2番目のトラックだけ再生
+music.music(8)                     # 推奨の音律(41-EDO)で自動的に再生
+music.music(5, solo=1)             # カノンの2番目のトラックだけ再生
 
-m = music.music(5, is_play=False)  ## 再生せずに生成だけ行う
-m.save("canon.wav")                ## WAVファイルに保存
+m = music.music(5, is_play=False)  # 再生せずに生成だけ行う
+m.save("canon.wav")                # WAVファイルに保存
 ```
 
 ### 🎼 自分で曲を作る
@@ -78,16 +78,16 @@ m.save("canon.wav")                ## WAVファイルに保存
 ```python
 from music import Ongaku
 
-m = Ongaku(equal=24)               ## 24-EDO(四分音を含む)
+m = Ongaku(equal=24)               # 24-EDO(四分音を含む)
 
-m.tone("C4", long=4)               ## 4分音符のド
-m.tone("C+4")                      ## 1ステップ上(24-EDOでは四分音)
+m.tone("C4", long=4)               # 4分音符のド
+m.tone("C+4")                      # 1ステップ上(24-EDOでは四分音)
 m.tone("E4")
-m.rest()                           ## 休符
-m.tone(("C4", "E4", "G4"), long=1) ## 和音(全音符)
+m.rest()                           # 休符
+m.tone(("C4", "E4", "G4"), long=1) # 和音(全音符)
 
-m.play()                           ## 再生
-m.save("my_song.wav")              ## 保存
+m.play()                           # 再生
+m.save("my_song.wav")              # 保存
 ```
 
 #### 音の書き方
@@ -136,7 +136,7 @@ m.envelope_data.update({"attack": 0.01, "decay": 0.2, "sustain": 0.6, "release":
 
 ```python
 m = Ongaku(equal=41)
-m.ji_tone(((0, 0, 0), (0, 1, 0), (0, 0, 1)), long=1)   ## 純正律の長三和音
+m.ji_tone(((0, 0, 0), (0, 1, 0), (0, 0, 1)), long=1)   # 純正律の長三和音
 ```
 
 #### 定義和音(機能式)
@@ -145,9 +145,9 @@ m.ji_tone(((0, 0, 0), (0, 1, 0), (0, 0, 1)), long=1)   ## 純正律の長三和�
 
 ```python
 m = Ongaku(equal=41)
-m.func_tone("O", long=2)         ## 主和音
-m.func_tone("<,", long=2)        ## 左に移った和音 + 追加音
-m.func_tone(("O,", "/O"), long=1) ## 和音 + ベース(/)
+m.func_tone("O", long=2)         # 主和音
+m.func_tone("<,", long=2)        # 左に移った和音 + 追加音
+m.func_tone(("O,", "/O"), long=1) # 和音 + ベース(/)
 ```
 
 機能式の記法の詳細は、元となっている _pasmacafcól_ の[解説動画](https://www.youtube.com/watch?v=pYSICBXBxpo)と[公式の解説ページ](https://lamplight0.sakura.ne.jp/a/langs/saf_sdic_iframe_wordpage.php?ic=E8tw5)を参照してください。
@@ -157,9 +157,9 @@ m.func_tone(("O,", "/O"), long=1) ## 和音 + ベース(/)
 ```
 music_library/
 ├── music/
-│   ├── __init__.py     ## 公開API(music, get_music_titles, get_music_dict, Ongaku, DefChord)
-│   ├── core.py         ## シンセサイザー本体(Ongaku / Calculator / DefChord)
-│   └── music_data.py   ## 付属の曲データ
+│   ├── __init__.py     # 公開API(music, get_music_titles, get_music_dict, Ongaku, DefChord)
+│   ├── core.py         # シンセサイザー本体(Ongaku / Calculator / DefChord)
+│   └── music_data.py   # 付属の曲データ
 ├── .gitignore
 └── README.md
 ```
