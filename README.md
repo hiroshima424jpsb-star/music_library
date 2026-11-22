@@ -175,6 +175,8 @@ music_library/
 
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
+Copyright (c) 2026 zibluko
+
 本作品は
 [クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)
 の下に提供されています。
