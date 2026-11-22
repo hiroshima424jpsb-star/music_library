@@ -136,7 +136,7 @@ m.envelope_data.update({"attack": 0.01, "decay": 0.2, "sustain": 0.6, "release":
 
 ```python
 m = Ongaku(equal=41)
-m.ji_tone(((0, 0), (1, 0), (0, 1)), long=1)   ## 純正律の長三和音
+m.ji_tone(((0, 0, 0), (0, 1, 0), (0, 0, 1)), long=1)   ## 純正律の長三和音
 ```
 
 #### 定義和音(機能式)
